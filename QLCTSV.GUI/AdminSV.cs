@@ -37,32 +37,6 @@ namespace QLCTSV.GUI
             Label_Chung.ForeColor = ThemeColor.PrimaryColor;
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "Images (*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
-
-            if (openFile.ShowDialog() == DialogResult.OK)
-            {
-                try
-                {
-                    string sourceFilePath = openFile.FileName;
-                    string fileName = Path.GetFileName(sourceFilePath);
-                    string targetFolder = Path.Combine(Application.StartupPath, "Images");
-                    if (!Directory.Exists(targetFolder))
-                    {
-                        Directory.CreateDirectory(targetFolder);
-                    }
-                    string targetFilePath = Path.Combine(targetFolder, fileName);
-                    File.Copy(sourceFilePath, targetFilePath, true);
-                    pictureBox_anhSV.Image = Image.FromFile(targetFilePath);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi khi sao chép và tải ảnh: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    pictureBox_anhSV.Text = "";
-                }
-            }
-        }
+       
     }
 }
