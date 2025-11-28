@@ -46,12 +46,14 @@
             this.textBox_matKhau = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnReturn = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnReturn)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -232,6 +234,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnReturn);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel3);
@@ -249,6 +252,17 @@
             this.panel1.Size = new System.Drawing.Size(457, 663);
             this.panel1.TabIndex = 14;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnReturn
+            // 
+            this.btnReturn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReturn.Image = ((System.Drawing.Image)(resources.GetObject("btnReturn.Image")));
+            this.btnReturn.Location = new System.Drawing.Point(389, 21);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(42, 37);
+            this.btnReturn.TabIndex = 20;
+            this.btnReturn.TabStop = false;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // SignInForm
             // 
@@ -272,6 +286,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnReturn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -294,6 +309,7 @@
         private System.Windows.Forms.TextBox textBox_matKhau;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox btnReturn;
     }
 }
 

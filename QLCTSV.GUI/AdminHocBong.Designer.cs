@@ -46,12 +46,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(523, 88);
+            this.dataGridView1.Location = new System.Drawing.Point(48, 231);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(557, 410);
+            this.dataGridView1.Size = new System.Drawing.Size(1063, 273);
             this.dataGridView1.TabIndex = 17;
             // 
             // groupBox1
@@ -61,11 +61,11 @@
             this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.label_NamHoc);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(37, 71);
+            this.groupBox1.Location = new System.Drawing.Point(48, 72);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(423, 144);
+            this.groupBox1.Size = new System.Drawing.Size(1063, 88);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Học Bổng";
@@ -79,17 +79,17 @@
             "xuất sắc",
             "giỏi",
             "khá"});
-            this.comboBox1.Location = new System.Drawing.Point(187, 73);
+            this.comboBox1.Location = new System.Drawing.Point(701, 26);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(215, 33);
+            this.comboBox1.Size = new System.Drawing.Size(324, 33);
             this.comboBox1.TabIndex = 32;
             // 
             // label_HocBong
             // 
             this.label_HocBong.AutoSize = true;
             this.label_HocBong.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_HocBong.Location = new System.Drawing.Point(6, 73);
+            this.label_HocBong.Location = new System.Drawing.Point(609, 31);
             this.label_HocBong.Name = "label_HocBong";
             this.label_HocBong.Size = new System.Drawing.Size(66, 23);
             this.label_HocBong.TabIndex = 31;
@@ -104,17 +104,17 @@
             "2024-2025",
             "2025-2026",
             "2026-2027"});
-            this.comboBox2.Location = new System.Drawing.Point(187, 31);
+            this.comboBox2.Location = new System.Drawing.Point(144, 26);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(215, 33);
+            this.comboBox2.Size = new System.Drawing.Size(324, 33);
             this.comboBox2.TabIndex = 29;
             // 
             // label_NamHoc
             // 
             this.label_NamHoc.AutoSize = true;
             this.label_NamHoc.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_NamHoc.Location = new System.Drawing.Point(6, 34);
+            this.label_NamHoc.Location = new System.Drawing.Point(37, 31);
             this.label_NamHoc.Name = "label_NamHoc";
             this.label_NamHoc.Size = new System.Drawing.Size(89, 23);
             this.label_NamHoc.TabIndex = 16;
@@ -125,7 +125,7 @@
             this.Label_Chung.AutoSize = true;
             this.Label_Chung.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Chung.ForeColor = System.Drawing.Color.Blue;
-            this.Label_Chung.Location = new System.Drawing.Point(29, 231);
+            this.Label_Chung.Location = new System.Drawing.Point(40, 184);
             this.Label_Chung.Name = "Label_Chung";
             this.Label_Chung.Size = new System.Drawing.Size(306, 45);
             this.Label_Chung.TabIndex = 18;
@@ -136,12 +136,12 @@
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(546, 527);
+            this.button1.Location = new System.Drawing.Point(888, 518);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 85);
+            this.button1.Size = new System.Drawing.Size(223, 59);
             this.button1.TabIndex = 23;
-            this.button1.Text = "Xem danh sach";
+            this.button1.Text = "Xem danh sách";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // AdminHocBong
