@@ -152,5 +152,10 @@ namespace QLCTSV.GUI
         {
 
         }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
