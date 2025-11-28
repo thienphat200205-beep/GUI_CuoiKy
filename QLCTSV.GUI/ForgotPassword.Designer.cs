@@ -32,20 +32,20 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox_matKhau = new System.Windows.Forms.TextBox();
+            this.textBox_MatKhauMoi = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox_TaiKhoan = new System.Windows.Forms.TextBox();
+            this.textBox_MaSV = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button_DangNhap = new System.Windows.Forms.Button();
+            this.button_XacNhan = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_SDT = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox_XacNhanMatKhau = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnReturn = new System.Windows.Forms.PictureBox();
@@ -78,21 +78,21 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.textBox_matKhau);
+            this.panel5.Controls.Add(this.textBox_MatKhauMoi);
             this.panel5.Location = new System.Drawing.Point(57, 384);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(329, 42);
             this.panel5.TabIndex = 23;
             // 
-            // textBox_matKhau
+            // textBox_MatKhauMoi
             // 
-            this.textBox_matKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_matKhau.ForeColor = System.Drawing.Color.Black;
-            this.textBox_matKhau.Location = new System.Drawing.Point(3, 9);
-            this.textBox_matKhau.Multiline = true;
-            this.textBox_matKhau.Name = "textBox_matKhau";
-            this.textBox_matKhau.Size = new System.Drawing.Size(323, 24);
-            this.textBox_matKhau.TabIndex = 6;
+            this.textBox_MatKhauMoi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_MatKhauMoi.ForeColor = System.Drawing.Color.Black;
+            this.textBox_MatKhauMoi.Location = new System.Drawing.Point(3, 9);
+            this.textBox_MatKhauMoi.Multiline = true;
+            this.textBox_MatKhauMoi.Name = "textBox_MatKhauMoi";
+            this.textBox_MatKhauMoi.Size = new System.Drawing.Size(323, 24);
+            this.textBox_MatKhauMoi.TabIndex = 6;
             // 
             // panel3
             // 
@@ -104,21 +104,21 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox_TaiKhoan);
+            this.panel2.Controls.Add(this.textBox_MaSV);
             this.panel2.Location = new System.Drawing.Point(57, 234);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(329, 42);
             this.panel2.TabIndex = 21;
             // 
-            // textBox_TaiKhoan
+            // textBox_MaSV
             // 
-            this.textBox_TaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_TaiKhoan.ForeColor = System.Drawing.Color.Black;
-            this.textBox_TaiKhoan.Location = new System.Drawing.Point(3, 9);
-            this.textBox_TaiKhoan.Multiline = true;
-            this.textBox_TaiKhoan.Name = "textBox_TaiKhoan";
-            this.textBox_TaiKhoan.Size = new System.Drawing.Size(323, 24);
-            this.textBox_TaiKhoan.TabIndex = 6;
+            this.textBox_MaSV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_MaSV.ForeColor = System.Drawing.Color.Black;
+            this.textBox_MaSV.Location = new System.Drawing.Point(3, 9);
+            this.textBox_MaSV.Multiline = true;
+            this.textBox_MaSV.Name = "textBox_MaSV";
+            this.textBox_MaSV.Size = new System.Drawing.Size(323, 24);
+            this.textBox_MaSV.TabIndex = 6;
             // 
             // label4
             // 
@@ -131,19 +131,20 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "Mã sinh viên";
             // 
-            // button_DangNhap
+            // button_XacNhan
             // 
-            this.button_DangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(78)))), ((int)(((byte)(159)))));
-            this.button_DangNhap.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_DangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_DangNhap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_DangNhap.ForeColor = System.Drawing.Color.White;
-            this.button_DangNhap.Location = new System.Drawing.Point(57, 520);
-            this.button_DangNhap.Name = "button_DangNhap";
-            this.button_DangNhap.Size = new System.Drawing.Size(329, 40);
-            this.button_DangNhap.TabIndex = 20;
-            this.button_DangNhap.Text = "Xác nhận";
-            this.button_DangNhap.UseVisualStyleBackColor = false;
+            this.button_XacNhan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(78)))), ((int)(((byte)(159)))));
+            this.button_XacNhan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_XacNhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_XacNhan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_XacNhan.ForeColor = System.Drawing.Color.White;
+            this.button_XacNhan.Location = new System.Drawing.Point(57, 520);
+            this.button_XacNhan.Name = "button_XacNhan";
+            this.button_XacNhan.Size = new System.Drawing.Size(329, 40);
+            this.button_XacNhan.TabIndex = 20;
+            this.button_XacNhan.Text = "Xác nhận";
+            this.button_XacNhan.UseVisualStyleBackColor = false;
+            this.button_XacNhan.Click += new System.EventHandler(this.button_XacNhan_Click);
             // 
             // label5
             // 
@@ -166,21 +167,21 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.textBox1);
+            this.panel6.Controls.Add(this.textBox_SDT);
             this.panel6.Location = new System.Drawing.Point(57, 310);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(329, 42);
             this.panel6.TabIndex = 24;
             // 
-            // textBox1
+            // textBox_SDT
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(3, 9);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(323, 24);
-            this.textBox1.TabIndex = 6;
+            this.textBox_SDT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_SDT.ForeColor = System.Drawing.Color.Black;
+            this.textBox_SDT.Location = new System.Drawing.Point(3, 9);
+            this.textBox_SDT.Multiline = true;
+            this.textBox_SDT.Name = "textBox_SDT";
+            this.textBox_SDT.Size = new System.Drawing.Size(323, 24);
+            this.textBox_SDT.TabIndex = 6;
             // 
             // label1
             // 
@@ -203,21 +204,21 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.textBox2);
+            this.panel8.Controls.Add(this.textBox_XacNhanMatKhau);
             this.panel8.Location = new System.Drawing.Point(57, 456);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(329, 42);
             this.panel8.TabIndex = 27;
             // 
-            // textBox2
+            // textBox_XacNhanMatKhau
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(3, 9);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(323, 24);
-            this.textBox2.TabIndex = 6;
+            this.textBox_XacNhanMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_XacNhanMatKhau.ForeColor = System.Drawing.Color.Black;
+            this.textBox_XacNhanMatKhau.Location = new System.Drawing.Point(3, 9);
+            this.textBox_XacNhanMatKhau.Multiline = true;
+            this.textBox_XacNhanMatKhau.Name = "textBox_XacNhanMatKhau";
+            this.textBox_XacNhanMatKhau.Size = new System.Drawing.Size(323, 24);
+            this.textBox_XacNhanMatKhau.TabIndex = 6;
             // 
             // label2
             // 
@@ -272,7 +273,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button_DangNhap);
+            this.Controls.Add(this.button_XacNhan);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -299,20 +300,20 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox_matKhau;
+        private System.Windows.Forms.TextBox textBox_MatKhauMoi;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox_TaiKhoan;
+        private System.Windows.Forms.TextBox textBox_MaSV;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button_DangNhap;
+        private System.Windows.Forms.Button button_XacNhan;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_SDT;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox_XacNhanMatKhau;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox btnReturn;
