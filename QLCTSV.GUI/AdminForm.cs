@@ -223,5 +223,11 @@ namespace QLCTSV.GUI
         {
 
         }
+
+        private void pictureBox_logo_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
     }
 }

@@ -293,6 +293,7 @@
             this.pictureBox_logo.TabIndex = 0;
             this.pictureBox_logo.TabStop = false;
             this.pictureBox_logo.Click += new System.EventHandler(this.pictureBox_logo_Click);
+            this.pictureBox_logo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox_logo_MouseDown);
             // 
             // button_logout
             // 
