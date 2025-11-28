@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Net.Http;
-using System.Threading.Tasks;
 using System.Text.Json;
 
 using QLCTSV.DTO;
@@ -82,25 +81,26 @@ namespace QLCTSV.GUI
                 // 2. Gọi API POST /auth/login
                 HttpResponseMessage response = await _httpClient.PostAsync("auth/login", httpContent);
 
+                // Đăng nhập thành công (200 OK)
+                string jsonResponse = await response.Content.ReadAsStringAsync();
+
+                // Deserialize kết quả
+                var result = JsonSerializer.Deserialize<AuthResponseDTO>(jsonResponse, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+               
                 // 3. Xử lý phản hồi
-                if (response.IsSuccessStatusCode)
+                if (result.Role == "SinhVien")
                 {
-                    // Đăng nhập thành công (200 OK)
-                    string jsonResponse = await response.Content.ReadAsStringAsync();
-
-                    // Deserialize kết quả
-                    var result = JsonSerializer.Deserialize<AuthResponseDTO>(jsonResponse, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-
+                    MessageBox.Show("Sinh viên không được phép đăng nhập ở đây! Vui lòng đăng nhập ở nút 'Đăng nhập bằng tài khoản sinh viên' bên dưới.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (response.IsSuccessStatusCode)
+                {
                     MessageBox.Show($"Đăng nhập thành công! Vai trò: {result.Role}", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // Logic chuyển Form dựa trên Role
-                    if (result.Role == "Admin" || result.Role == "CTSV")
-                    {
+                    // Cán bộ đăng nhập thành công sẽ chuyển đến giao diện cho Admin
                         AdminForm adminForm = new AdminForm();
                         this.Hide();
                         adminForm.Show();
-                    }
-                    // Thêm else if cho Role "SinhVien" nếu cần
+                    
                 }
                 else if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
                 {
