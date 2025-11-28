@@ -89,5 +89,15 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QLCTSV.DAO\QLCTSV.DAO.csproj">
+      <Project>{d2817050-7f5f-49dd-8b79-6c01a2d102fc}</Project>
+      <Name>QLCTSV.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QLCTSV.DTO\QLCTSV.DTO.csproj">
+      <Project>{e23e203b-29a8-41e4-9a4c-ebd98f5dd948}</Project>
+      <Name>QLCTSV.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

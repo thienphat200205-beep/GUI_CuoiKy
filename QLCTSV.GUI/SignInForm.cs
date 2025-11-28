@@ -8,11 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Text.Json;
+
+using QLCTSV.DTO;
 
 namespace QLCTSV.GUI
 {
     public partial class SignInForm: Form
     {
+
+        // khởi tạo http client
+        private readonly HttpClient _httpClient = new HttpClient()
+        {
+            // thiết lập URL cho http client
+            BaseAddress = new Uri("http://localhost:5086/api/")
+        };
+
         public SignInForm()
         {
             InitializeComponent();
@@ -40,23 +53,80 @@ namespace QLCTSV.GUI
             svsignin.Show();
         }
 
-        private void button_DangNhap_Click(object sender, EventArgs e)
+        private async void button_DangNhap_Click(object sender, EventArgs e)
         {
-           if(textBox_TaiKhoan.Text == "admin" && textBox_matKhau.Text == "abc123")
+            string username = textBox_TaiKhoan.Text.Trim();
+            string password = textBox_matKhau.Text;
+
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                AdminForm adminForm = new AdminForm();
-                this.Hide();
-                // Hiển thị form dưới dạng dialog
-                adminForm.Show();
+                MessageBox.Show("Vui lòng nhập đầy đủ Tài khoản và Mật khẩu.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            else
+
+            // Tắt nút để tránh click kép trong khi chờ API
+            button_DangNhap.Enabled = false;
+
+            try
             {
-                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng!", "Lỗi đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // 1. Chuẩn bị dữ liệu gửi đi (LoginRequestDTO)
+                var loginData = new AuthRequestDTO
+                {
+                    Username = username,
+                    Password = password
+                };
+
+                string jsonContent = JsonSerializer.Serialize(loginData);
+                var httpContent = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+                // 2. Gọi API POST /auth/login
+                HttpResponseMessage response = await _httpClient.PostAsync("auth/login", httpContent);
+
+                // 3. Xử lý phản hồi
+                if (response.IsSuccessStatusCode)
+                {
+                    // Đăng nhập thành công (200 OK)
+                    string jsonResponse = await response.Content.ReadAsStringAsync();
+
+                    // Deserialize kết quả
+                    var result = JsonSerializer.Deserialize<AuthResponseDTO>(jsonResponse, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+                    MessageBox.Show($"Đăng nhập thành công! Vai trò: {result.Role}", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Logic chuyển Form dựa trên Role
+                    if (result.Role == "Admin" || result.Role == "CTSV")
+                    {
+                        AdminForm adminForm = new AdminForm();
+                        this.Hide();
+                        adminForm.Show();
+                    }
+                    // Thêm else if cho Role "SinhVien" nếu cần
+                }
+                else if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+                {
+                    // Sai TK/MK (401 Unauthorized)
+                    MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Lỗi đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    // Các lỗi hệ thống khác (ví dụ: 500)
+                    MessageBox.Show($"Lỗi hệ thống: {response.StatusCode}. Vui lòng kiểm tra Server.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+            catch (Exception ex)
+            {
+                // Lỗi kết nối mạng, server chưa bật, v.v.
+                MessageBox.Show($"Lỗi kết nối API: {ex.Message}", "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                button_DangNhap.Enabled = true; // Bật lại nút
+            }
+
         }
 
 
-        
+
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
