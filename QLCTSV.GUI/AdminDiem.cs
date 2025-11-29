@@ -16,7 +16,7 @@ namespace QLCTSV.GUI
     public partial class AdminDiem: Form
     {
         private static readonly HttpClient client = new HttpClient();
-        private string baseUrl = "https://localhost:7135/api/";
+        private string baseUrl = "https://localhost:7135/";
         public AdminDiem()
         {
             InitializeComponent();

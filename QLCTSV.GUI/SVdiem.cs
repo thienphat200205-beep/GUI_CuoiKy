@@ -17,7 +17,7 @@ namespace QLCTSV.GUI
     {
         private static readonly HttpClient client = new HttpClient();
         // Nhớ có dấu / ở cuối
-        private string baseUrl = "http://localhost:5086/";
+        private string baseUrl = "https://localhost:7135/";
 
         // GIẢ LẬP MÃ SINH VIÊN ĐANG ĐĂNG NHẬP
         // Sau này bạn thay bằng: SVSignIn.MaSVDangNhap
