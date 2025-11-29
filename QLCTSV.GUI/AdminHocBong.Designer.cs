@@ -30,12 +30,12 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox_hocky = new System.Windows.Forms.ComboBox();
             this.label_HocBong = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox_namhoc = new System.Windows.Forms.ComboBox();
             this.label_NamHoc = new System.Windows.Forms.Label();
             this.Label_Chung = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_xemds = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -56,9 +56,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.comboBox_hocky);
             this.groupBox1.Controls.Add(this.label_HocBong);
-            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.comboBox_namhoc);
             this.groupBox1.Controls.Add(this.label_NamHoc);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(48, 72);
@@ -71,19 +71,19 @@
             this.groupBox1.Text = "Thông Tin Học Bổng";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // comboBox1
+            // comboBox_hocky
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBox_hocky.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_hocky.FormattingEnabled = true;
+            this.comboBox_hocky.Items.AddRange(new object[] {
             "xuất sắc",
             "giỏi",
             "khá"});
-            this.comboBox1.Location = new System.Drawing.Point(701, 26);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(324, 33);
-            this.comboBox1.TabIndex = 32;
+            this.comboBox_hocky.Location = new System.Drawing.Point(701, 26);
+            this.comboBox_hocky.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox_hocky.Name = "comboBox_hocky";
+            this.comboBox_hocky.Size = new System.Drawing.Size(324, 33);
+            this.comboBox_hocky.TabIndex = 32;
             // 
             // label_HocBong
             // 
@@ -95,20 +95,20 @@
             this.label_HocBong.TabIndex = 31;
             this.label_HocBong.Text = "Học kì:";
             // 
-            // comboBox2
+            // comboBox_namhoc
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBox_namhoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_namhoc.FormattingEnabled = true;
+            this.comboBox_namhoc.Items.AddRange(new object[] {
             "2023-2024",
             "2024-2025",
             "2025-2026",
             "2026-2027"});
-            this.comboBox2.Location = new System.Drawing.Point(144, 26);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(324, 33);
-            this.comboBox2.TabIndex = 29;
+            this.comboBox_namhoc.Location = new System.Drawing.Point(144, 26);
+            this.comboBox_namhoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox_namhoc.Name = "comboBox_namhoc";
+            this.comboBox_namhoc.Size = new System.Drawing.Size(324, 33);
+            this.comboBox_namhoc.TabIndex = 29;
             // 
             // label_NamHoc
             // 
@@ -131,25 +131,25 @@
             this.Label_Chung.TabIndex = 18;
             this.Label_Chung.Text = "Quản Lý Học Bổng";
             // 
-            // button1
+            // button_xemds
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(888, 518);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(223, 59);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Xem danh sách";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_xemds.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_xemds.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_xemds.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_xemds.Location = new System.Drawing.Point(888, 518);
+            this.button_xemds.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_xemds.Name = "button_xemds";
+            this.button_xemds.Size = new System.Drawing.Size(223, 59);
+            this.button_xemds.TabIndex = 23;
+            this.button_xemds.Text = "Xem danh sách";
+            this.button_xemds.UseVisualStyleBackColor = true;
             // 
             // AdminHocBong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1155, 623);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_xemds);
             this.Controls.Add(this.Label_Chung);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
@@ -171,9 +171,9 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label_NamHoc;
         private System.Windows.Forms.Label Label_Chung;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox_namhoc;
+        private System.Windows.Forms.ComboBox comboBox_hocky;
         private System.Windows.Forms.Label label_HocBong;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_xemds;
     }
 }

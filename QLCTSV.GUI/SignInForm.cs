@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Net.Http;
 using System.Text.Json;
-
 using QLCTSV.DTO;
 
 namespace QLCTSV.GUI
