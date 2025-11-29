@@ -55,7 +55,7 @@ namespace QLCTSV.GUI
             }
             if (comboBox_namhoc.Items.Count == 0)
             {
-                comboBox_namhoc.Items.AddRange(new string[] { "2023-2024", "2024-2025", "2025-2026" });
+                comboBox_namhoc.Items.AddRange(new string[] { "2023-2024", "2024-2025", "2025-2026", "2026-2027" });
                 comboBox_namhoc.SelectedIndex = 0;
             }
         }

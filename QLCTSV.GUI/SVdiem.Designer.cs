@@ -87,11 +87,6 @@
             // 
             this.comboBox_namhoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_namhoc.FormattingEnabled = true;
-            this.comboBox_namhoc.Items.AddRange(new object[] {
-            "2023-2024",
-            "2024-2025",
-            "2025-2026",
-            "2026-2027"});
             this.comboBox_namhoc.Location = new System.Drawing.Point(663, 29);
             this.comboBox_namhoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox_namhoc.Name = "comboBox_namhoc";
@@ -102,11 +97,6 @@
             // 
             this.comboBox_hocky.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_hocky.FormattingEnabled = true;
-            this.comboBox_hocky.Items.AddRange(new object[] {
-            "2023-2024",
-            "2024-2025",
-            "2025-2026",
-            "2026-2027"});
             this.comboBox_hocky.Location = new System.Drawing.Point(127, 29);
             this.comboBox_hocky.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox_hocky.Name = "comboBox_hocky";

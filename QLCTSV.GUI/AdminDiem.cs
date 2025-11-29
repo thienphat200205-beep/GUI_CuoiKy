@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using QLCTSV.DTO.AdminDTO;
 using Newtonsoft.Json;
 using System.Net.Http;
+using System.Globalization;
 
 namespace QLCTSV.GUI
 {
@@ -49,7 +50,7 @@ namespace QLCTSV.GUI
             // Thêm dữ liệu mẫu cho Năm học nếu chưa có
             if (comboBox_Namhoc.Items.Count == 0)
             {
-                comboBox_Namhoc.Items.AddRange(new string[] { "2023-2024", "2024-2025", "2025-2026" });
+                comboBox_Namhoc.Items.AddRange(new string[] { "2023-2024", "2024-2025", "2025-2026", "2026-2027" });
             }
 
             // Xếp loại có thể để tự động tính toán hoặc cho chọn
@@ -90,10 +91,25 @@ namespace QLCTSV.GUI
                 MessageBox.Show("Lỗi kết nối: " + ex.Message);
             }
         }
+        private string TinhXepLoai(double gpa)
+        {
+            if (gpa >= 3.6) return "Xuất sắc";
+            if (gpa >= 3.2) return "Giỏi";
+            if (gpa >= 2.5) return "Khá";
+            if (gpa >= 2.0) return "Trung bình";
+            return "Yếu";
+        }
         private ThemDiemDTO GetDiemFromUI()
         {
-            // Validate dữ liệu số
-            if (!double.TryParse(textBox_GPA.Text, out double gpa)) gpa = 0;
+            double gpa = 0;
+            if (!double.TryParse(textBox_GPA.Text.Replace(',', '.'), System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out gpa))
+            {
+                gpa = 0;
+            }
+
+            if (gpa > 4.0) gpa = 4.0;
+            if (gpa < 0) gpa = 0;
+            string xepLoaiTuDong = TinhXepLoai(gpa);
             if (!int.TryParse(textBox_Drl.Text, out int drl)) drl = 0;
 
             return new ThemDiemDTO()
@@ -103,7 +119,7 @@ namespace QLCTSV.GUI
                 NamHoc = comboBox_Namhoc.Text.Trim(),
                 GPA = gpa,
                 DiemRenLuyen = drl,
-                XepLoai = comboBox_xeploai.Text 
+                XepLoaiHocLuc = xepLoaiTuDong
             };
         }
         private void LoadTheme()

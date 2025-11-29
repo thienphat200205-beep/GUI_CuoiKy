@@ -89,11 +89,6 @@
             // 
             this.comboBox_Namhoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_Namhoc.FormattingEnabled = true;
-            this.comboBox_Namhoc.Items.AddRange(new object[] {
-            "2023-2024",
-            "2024-2025",
-            "2025-2026",
-            "2026-2027"});
             this.comboBox_Namhoc.Location = new System.Drawing.Point(205, 117);
             this.comboBox_Namhoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox_Namhoc.Name = "comboBox_Namhoc";
@@ -114,11 +109,6 @@
             // 
             this.comboBox_xeploai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_xeploai.FormattingEnabled = true;
-            this.comboBox_xeploai.Items.AddRange(new object[] {
-            "Giỏi",
-            "Khá",
-            "Trung Bình",
-            "Yếu"});
             this.comboBox_xeploai.Location = new System.Drawing.Point(205, 263);
             this.comboBox_xeploai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox_xeploai.Name = "comboBox_xeploai";

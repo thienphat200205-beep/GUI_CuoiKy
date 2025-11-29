@@ -14,6 +14,6 @@ namespace QLCTSV.DTO.AdminDTO
         public string NamHoc { get; set; }
         public double? GPA { get; set; } // Dấu ? để cho phép null nếu chưa có điểm
         public int? DiemRenLuyen { get; set; }
-        public string XepLoai { get; set; }
+        public string XepLoaiHocLuc { get; set; }
     }
 }
