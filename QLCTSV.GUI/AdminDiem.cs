@@ -51,5 +51,10 @@ namespace QLCTSV.GUI
             }
             Label_Chung.ForeColor = ThemeColor.PrimaryColor;
         }
+
+        private void button_lammoi_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

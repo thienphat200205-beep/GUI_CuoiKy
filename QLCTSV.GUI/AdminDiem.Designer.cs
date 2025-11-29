@@ -30,23 +30,23 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox_Namhoc = new System.Windows.Forms.ComboBox();
+            this.textBox_Drl = new System.Windows.Forms.TextBox();
+            this.comboBox_xeploai = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox_GPA = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox_HocKy = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_MaSV = new System.Windows.Forms.TextBox();
             this.Label_Chung = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button_save = new System.Windows.Forms.Button();
+            this.button_xoa = new System.Windows.Forms.Button();
+            this.button_sua = new System.Windows.Forms.Button();
+            this.button_them = new System.Windows.Forms.Button();
+            this.button_lammoi = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -54,17 +54,17 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.comboBox_Namhoc);
+            this.groupBox1.Controls.Add(this.textBox_Drl);
+            this.groupBox1.Controls.Add(this.comboBox_xeploai);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textBox_GPA);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textBox_HocKy);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBox_MaSV);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 99);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -85,46 +85,46 @@
             this.label6.TabIndex = 31;
             this.label6.Text = "Điểm rèn luyện:";
             // 
-            // comboBox2
+            // comboBox_Namhoc
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBox_Namhoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_Namhoc.FormattingEnabled = true;
+            this.comboBox_Namhoc.Items.AddRange(new object[] {
             "2023-2024",
             "2024-2025",
             "2025-2026",
             "2026-2027"});
-            this.comboBox2.Location = new System.Drawing.Point(205, 117);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(277, 33);
-            this.comboBox2.TabIndex = 30;
+            this.comboBox_Namhoc.Location = new System.Drawing.Point(205, 117);
+            this.comboBox_Namhoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox_Namhoc.Name = "comboBox_Namhoc";
+            this.comboBox_Namhoc.Size = new System.Drawing.Size(277, 33);
+            this.comboBox_Namhoc.TabIndex = 30;
             // 
-            // textBox3
+            // textBox_Drl
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(205, 214);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(277, 30);
-            this.textBox3.TabIndex = 4;
+            this.textBox_Drl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_Drl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Drl.Location = new System.Drawing.Point(205, 214);
+            this.textBox_Drl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox_Drl.Name = "textBox_Drl";
+            this.textBox_Drl.Size = new System.Drawing.Size(277, 30);
+            this.textBox_Drl.TabIndex = 4;
             // 
-            // comboBox1
+            // comboBox_xeploai
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBox_xeploai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_xeploai.FormattingEnabled = true;
+            this.comboBox_xeploai.Items.AddRange(new object[] {
             "Giỏi",
             "Khá",
             "Trung Bình",
             "Yếu"});
-            this.comboBox1.Location = new System.Drawing.Point(205, 263);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(277, 33);
-            this.comboBox1.TabIndex = 21;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox_xeploai.Location = new System.Drawing.Point(205, 263);
+            this.comboBox_xeploai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox_xeploai.Name = "comboBox_xeploai";
+            this.comboBox_xeploai.Size = new System.Drawing.Size(277, 33);
+            this.comboBox_xeploai.TabIndex = 21;
+            this.comboBox_xeploai.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -147,15 +147,15 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "GPA:";
             // 
-            // textBox4
+            // textBox_GPA
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(205, 170);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(277, 30);
-            this.textBox4.TabIndex = 3;
+            this.textBox_GPA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_GPA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_GPA.Location = new System.Drawing.Point(205, 170);
+            this.textBox_GPA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox_GPA.Name = "textBox_GPA";
+            this.textBox_GPA.Size = new System.Drawing.Size(277, 30);
+            this.textBox_GPA.TabIndex = 3;
             // 
             // label3
             // 
@@ -177,15 +177,15 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "Học Kỳ:";
             // 
-            // textBox2
+            // textBox_HocKy
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(205, 75);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(277, 30);
-            this.textBox2.TabIndex = 2;
+            this.textBox_HocKy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_HocKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_HocKy.Location = new System.Drawing.Point(205, 75);
+            this.textBox_HocKy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox_HocKy.Name = "textBox_HocKy";
+            this.textBox_HocKy.Size = new System.Drawing.Size(277, 30);
+            this.textBox_HocKy.TabIndex = 2;
             // 
             // label1
             // 
@@ -197,15 +197,15 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Mã Sinh Viên:";
             // 
-            // textBox1
+            // textBox_MaSV
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(205, 33);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(277, 30);
-            this.textBox1.TabIndex = 1;
+            this.textBox_MaSV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_MaSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_MaSV.Location = new System.Drawing.Point(205, 33);
+            this.textBox_MaSV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox_MaSV.Name = "textBox_MaSV";
+            this.textBox_MaSV.Size = new System.Drawing.Size(277, 30);
+            this.textBox_MaSV.TabIndex = 1;
             // 
             // Label_Chung
             // 
@@ -233,67 +233,68 @@
             this.dataGridView1.Size = new System.Drawing.Size(521, 404);
             this.dataGridView1.TabIndex = 18;
             // 
-            // button6
+            // button_xoa
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(856, 517);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(100, 83);
-            this.button6.TabIndex = 24;
-            this.button6.Text = "Xóa";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button_xoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_xoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_xoa.Location = new System.Drawing.Point(997, 517);
+            this.button_xoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_xoa.Name = "button_xoa";
+            this.button_xoa.Size = new System.Drawing.Size(100, 83);
+            this.button_xoa.TabIndex = 24;
+            this.button_xoa.Text = "Xóa";
+            this.button_xoa.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // button_sua
             // 
-            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(714, 517);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(100, 83);
-            this.button7.TabIndex = 25;
-            this.button7.Text = "Sửa";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button_sua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_sua.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_sua.Location = new System.Drawing.Point(714, 517);
+            this.button_sua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_sua.Name = "button_sua";
+            this.button_sua.Size = new System.Drawing.Size(100, 83);
+            this.button_sua.TabIndex = 25;
+            this.button_sua.Text = "Sửa";
+            this.button_sua.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // button_them
             // 
-            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(576, 517);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(100, 83);
-            this.button8.TabIndex = 23;
-            this.button8.Text = "Thêm";
-            this.button8.UseVisualStyleBackColor = true;
+            this.button_them.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_them.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_them.Location = new System.Drawing.Point(576, 517);
+            this.button_them.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_them.Name = "button_them";
+            this.button_them.Size = new System.Drawing.Size(100, 83);
+            this.button_them.TabIndex = 23;
+            this.button_them.Text = "Thêm";
+            this.button_them.UseVisualStyleBackColor = true;
             // 
-            // button_save
+            // button_lammoi
             // 
-            this.button_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_save.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_save.Location = new System.Drawing.Point(997, 517);
-            this.button_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button_save.Name = "button_save";
-            this.button_save.Size = new System.Drawing.Size(100, 83);
-            this.button_save.TabIndex = 39;
-            this.button_save.Text = "Lưu";
-            this.button_save.UseVisualStyleBackColor = true;
+            this.button_lammoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_lammoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_lammoi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_lammoi.Location = new System.Drawing.Point(853, 517);
+            this.button_lammoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_lammoi.Name = "button_lammoi";
+            this.button_lammoi.Size = new System.Drawing.Size(100, 83);
+            this.button_lammoi.TabIndex = 39;
+            this.button_lammoi.Text = "Hủy chọn";
+            this.button_lammoi.UseVisualStyleBackColor = true;
+            this.button_lammoi.Click += new System.EventHandler(this.button_lammoi_Click);
             // 
             // AdminDiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1155, 623);
-            this.Controls.Add(this.button_save);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button_lammoi);
+            this.Controls.Add(this.button_xoa);
+            this.Controls.Add(this.button_sua);
+            this.Controls.Add(this.button_them);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Label_Chung);
@@ -311,23 +312,23 @@
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox_xeploai;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox_GPA;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox_HocKy;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_MaSV;
         private System.Windows.Forms.Label Label_Chung;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox_Namhoc;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox_Drl;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button_save;
+        private System.Windows.Forms.Button button_xoa;
+        private System.Windows.Forms.Button button_sua;
+        private System.Windows.Forms.Button button_them;
+        private System.Windows.Forms.Button button_lammoi;
     }
 }

@@ -30,24 +30,24 @@
         {
             this.Label_QLKL = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker_date = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox_hinhthuc = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox_namhoc = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox_hocky = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_MaSV = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label_HTKL = new System.Windows.Forms.Label();
             this.label_DSSV = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_xoa = new System.Windows.Forms.Button();
+            this.button_sua = new System.Windows.Forms.Button();
+            this.button_them = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button_save = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.button_lammoi = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -58,7 +58,7 @@
             this.Label_QLKL.AutoSize = true;
             this.Label_QLKL.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_QLKL.ForeColor = System.Drawing.Color.Red;
-            this.Label_QLKL.Location = new System.Drawing.Point(37, 44);
+            this.Label_QLKL.Location = new System.Drawing.Point(37, 31);
             this.Label_QLKL.Name = "Label_QLKL";
             this.Label_QLKL.Size = new System.Drawing.Size(243, 41);
             this.Label_QLKL.TabIndex = 21;
@@ -67,17 +67,17 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.dateTimePicker_date);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.comboBox_hinhthuc);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.comboBox_namhoc);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textBox_hocky);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(41, 85);
+            this.groupBox1.Controls.Add(this.textBox_MaSV);
+            this.groupBox1.Location = new System.Drawing.Point(41, 72);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -86,6 +86,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Kỷ Luật";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // dateTimePicker_date
+            // 
+            this.dateTimePicker_date.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dateTimePicker_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker_date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker_date.Location = new System.Drawing.Point(203, 211);
+            this.dateTimePicker_date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePicker_date.Name = "dateTimePicker_date";
+            this.dateTimePicker_date.Size = new System.Drawing.Size(277, 30);
+            this.dateTimePicker_date.TabIndex = 35;
+            this.dateTimePicker_date.Value = new System.DateTime(2025, 11, 5, 21, 58, 0, 0);
             // 
             // label4
             // 
@@ -97,21 +109,21 @@
             this.label4.TabIndex = 34;
             this.label4.Text = "Ngày quyết định";
             // 
-            // comboBox1
+            // comboBox_hinhthuc
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBox_hinhthuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_hinhthuc.FormattingEnabled = true;
+            this.comboBox_hinhthuc.Items.AddRange(new object[] {
             "cảnh báo học vụ lần 1",
             "cảnh báo học vụ lần 2",
             "đình chỉ 1 học kì",
             "buộc thôi học"});
-            this.comboBox1.Location = new System.Drawing.Point(203, 166);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(277, 33);
-            this.comboBox1.TabIndex = 32;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox_hinhthuc.Location = new System.Drawing.Point(203, 166);
+            this.comboBox_hinhthuc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox_hinhthuc.Name = "comboBox_hinhthuc";
+            this.comboBox_hinhthuc.Size = new System.Drawing.Size(277, 33);
+            this.comboBox_hinhthuc.TabIndex = 32;
+            this.comboBox_hinhthuc.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -123,20 +135,20 @@
             this.label6.TabIndex = 31;
             this.label6.Text = "Hình thức:";
             // 
-            // comboBox2
+            // comboBox_namhoc
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBox_namhoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_namhoc.FormattingEnabled = true;
+            this.comboBox_namhoc.Items.AddRange(new object[] {
             "2023-2024",
             "2024-2025",
             "2025-2026",
             "2026-2027"});
-            this.comboBox2.Location = new System.Drawing.Point(203, 118);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(277, 33);
-            this.comboBox2.TabIndex = 29;
+            this.comboBox_namhoc.Location = new System.Drawing.Point(203, 118);
+            this.comboBox_namhoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox_namhoc.Name = "comboBox_namhoc";
+            this.comboBox_namhoc.Size = new System.Drawing.Size(277, 33);
+            this.comboBox_namhoc.TabIndex = 29;
             // 
             // label3
             // 
@@ -158,15 +170,15 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "Học Kỳ:";
             // 
-            // textBox2
+            // textBox_hocky
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(203, 76);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(277, 30);
-            this.textBox2.TabIndex = 15;
+            this.textBox_hocky.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_hocky.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_hocky.Location = new System.Drawing.Point(203, 76);
+            this.textBox_hocky.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox_hocky.Name = "textBox_hocky";
+            this.textBox_hocky.Size = new System.Drawing.Size(277, 30);
+            this.textBox_hocky.TabIndex = 15;
             // 
             // label1
             // 
@@ -179,22 +191,22 @@
             this.label1.Text = "Mã Sinh Viên:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // textBox_MaSV
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(203, 34);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(277, 30);
-            this.textBox1.TabIndex = 13;
+            this.textBox_MaSV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_MaSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_MaSV.Location = new System.Drawing.Point(203, 34);
+            this.textBox_MaSV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox_MaSV.Name = "textBox_MaSV";
+            this.textBox_MaSV.Size = new System.Drawing.Size(277, 30);
+            this.textBox_MaSV.TabIndex = 13;
             // 
             // dataGridView2
             // 
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(573, 96);
+            this.dataGridView2.Location = new System.Drawing.Point(573, 83);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
@@ -207,7 +219,7 @@
             this.label_HTKL.AutoSize = true;
             this.label_HTKL.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_HTKL.ForeColor = System.Drawing.Color.Red;
-            this.label_HTKL.Location = new System.Drawing.Point(566, 53);
+            this.label_HTKL.Location = new System.Drawing.Point(566, 40);
             this.label_HTKL.Name = "label_HTKL";
             this.label_HTKL.Size = new System.Drawing.Size(265, 41);
             this.label_HTKL.TabIndex = 23;
@@ -224,41 +236,41 @@
             this.label_DSSV.TabIndex = 24;
             this.label_DSSV.Text = "Danh sách sinh viên";
             // 
-            // button3
+            // button_xoa
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(308, 359);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 40);
-            this.button3.TabIndex = 36;
-            this.button3.Text = "Xóa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_xoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_xoa.Location = new System.Drawing.Point(308, 346);
+            this.button_xoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_xoa.Name = "button_xoa";
+            this.button_xoa.Size = new System.Drawing.Size(100, 72);
+            this.button_xoa.TabIndex = 36;
+            this.button_xoa.Text = "Xóa";
+            this.button_xoa.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // button_sua
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(170, 359);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 40);
-            this.button2.TabIndex = 37;
-            this.button2.Text = "Sửa";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_sua.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_sua.Location = new System.Drawing.Point(170, 346);
+            this.button_sua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_sua.Name = "button_sua";
+            this.button_sua.Size = new System.Drawing.Size(100, 72);
+            this.button_sua.TabIndex = 37;
+            this.button_sua.Text = "Sửa";
+            this.button_sua.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // button_them
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(41, 359);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 40);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_them.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_them.Location = new System.Drawing.Point(41, 346);
+            this.button_them.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_them.Name = "button_them";
+            this.button_them.Size = new System.Drawing.Size(100, 72);
+            this.button_them.TabIndex = 35;
+            this.button_them.Text = "Thêm";
+            this.button_them.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -274,42 +286,30 @@
             this.dataGridView1.Size = new System.Drawing.Size(1068, 128);
             this.dataGridView1.TabIndex = 20;
             // 
-            // button_save
+            // button_lammoi
             // 
-            this.button_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_save.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_save.Location = new System.Drawing.Point(440, 358);
-            this.button_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button_save.Name = "button_save";
-            this.button_save.Size = new System.Drawing.Size(100, 40);
-            this.button_save.TabIndex = 38;
-            this.button_save.Text = "Lưu";
-            this.button_save.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(203, 211);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(277, 30);
-            this.dateTimePicker1.TabIndex = 35;
-            this.dateTimePicker1.Value = new System.DateTime(2025, 11, 5, 21, 58, 0, 0);
+            this.button_lammoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_lammoi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_lammoi.Location = new System.Drawing.Point(440, 345);
+            this.button_lammoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_lammoi.Name = "button_lammoi";
+            this.button_lammoi.Size = new System.Drawing.Size(100, 73);
+            this.button_lammoi.TabIndex = 38;
+            this.button_lammoi.Text = "Hủy chọn";
+            this.button_lammoi.UseVisualStyleBackColor = true;
             // 
             // AdminKyLuat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1155, 623);
-            this.Controls.Add(this.button_save);
+            this.Controls.Add(this.button_lammoi);
             this.Controls.Add(this.label_DSSV);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button_xoa);
             this.Controls.Add(this.label_HTKL);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button_sua);
             this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_them);
             this.Controls.Add(this.Label_QLKL);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
@@ -331,22 +331,22 @@
         private System.Windows.Forms.Label Label_QLKL;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox_namhoc;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox_hocky;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox_MaSV;
+        private System.Windows.Forms.ComboBox comboBox_hinhthuc;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label_HTKL;
         private System.Windows.Forms.Label label_DSSV;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_xoa;
+        private System.Windows.Forms.Button button_sua;
+        private System.Windows.Forms.Button button_them;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button_save;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_date;
+        private System.Windows.Forms.Button button_lammoi;
     }
 }
