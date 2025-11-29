@@ -102,7 +102,8 @@ namespace QLCTSV.GUI
                 HocKy = textBox_HocKy.Text.Trim(),
                 NamHoc = comboBox_Namhoc.Text.Trim(),
                 GPA = gpa,
-                DiemRenLuyen = drl
+                DiemRenLuyen = drl,
+                XepLoai = comboBox_xeploai.Text 
             };
         }
         private void LoadTheme()
@@ -128,6 +129,7 @@ namespace QLCTSV.GUI
             comboBox_Namhoc.SelectedIndex = -1;
             textBox_GPA.Clear();
             textBox_Drl.Clear();
+            comboBox_xeploai.SelectedIndex = -1;
 
             // Mở khóa lại các ô quan trọng
             textBox_MaSV.Enabled = true;
@@ -230,6 +232,7 @@ namespace QLCTSV.GUI
             comboBox_Namhoc.Text = row.Cells["NamHoc"].Value?.ToString();
             textBox_GPA.Text = row.Cells["GPA"].Value?.ToString();
             textBox_Drl.Text = row.Cells["DiemRenLuyen"].Value?.ToString();
+            comboBox_xeploai.Text = row.Cells["XepLoai"].Value?.ToString();
 
             // Khi sửa điểm, KHÔNG ĐƯỢC sửa Mã SV, Học Kỳ, Năm Học
             textBox_MaSV.Enabled = false;
