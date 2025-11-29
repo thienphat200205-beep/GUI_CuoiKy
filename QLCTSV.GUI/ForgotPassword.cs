@@ -18,7 +18,7 @@ namespace QLCTSV.GUI
         private readonly HttpClient _httpClient = new HttpClient()
         {
             // thiết lập URL cho http client
-            BaseAddress = new Uri("http://localhost:5086/api/")
+            BaseAddress = new Uri("https://localhost:7135/api/")
         };
         public ForgotPassword()
         {
