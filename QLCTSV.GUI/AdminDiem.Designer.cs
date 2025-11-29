@@ -232,6 +232,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(521, 404);
             this.dataGridView1.TabIndex = 18;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // button_xoa
             // 
@@ -245,6 +246,7 @@
             this.button_xoa.TabIndex = 24;
             this.button_xoa.Text = "Xóa";
             this.button_xoa.UseVisualStyleBackColor = true;
+            this.button_xoa.Click += new System.EventHandler(this.button_xoa_Click);
             // 
             // button_sua
             // 
@@ -258,6 +260,7 @@
             this.button_sua.TabIndex = 25;
             this.button_sua.Text = "Sửa";
             this.button_sua.UseVisualStyleBackColor = true;
+            this.button_sua.Click += new System.EventHandler(this.button_sua_Click);
             // 
             // button_them
             // 
@@ -271,6 +274,7 @@
             this.button_them.TabIndex = 23;
             this.button_them.Text = "Thêm";
             this.button_them.UseVisualStyleBackColor = true;
+            this.button_them.Click += new System.EventHandler(this.button_them_Click);
             // 
             // button_lammoi
             // 
