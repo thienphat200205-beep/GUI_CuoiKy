@@ -24,7 +24,7 @@ namespace QLCTSV.GUI
 
         private static readonly HttpClient client = new HttpClient();
 
-        private string baseUrl = "http://localhost:5086/";
+        private string baseUrl = "https://localhost:7135/"; 
 
         private void AdminSV_Load(object sender, EventArgs e)
         {
