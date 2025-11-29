@@ -79,13 +79,13 @@ namespace QLCTSV.GUI
         {
             return new SinhVienDTO()
             {
-                
-                MaSV = textBox_MaSV.Text,
-                HoTen = textBox_Ten.Text,
+
+                MaSV = textBox_MaSV.Text.Trim(),
+                HoTen = textBox_Ten.Text.Trim(),
                 NgaySinh = dateTimePicker_date.Value,
-                GioiTinh = comboBox_GT.Text,
-                DiaChi = textBox_diaChi.Text,
-                SoDienThoai = textBox_Sdt.Text
+                GioiTinh = comboBox_GT.Text.Trim(),
+                DiaChi = textBox_diaChi.Text.Trim(),
+                SoDienThoai = textBox_Sdt.Text.Trim()
             };
         }
 
@@ -96,6 +96,13 @@ namespace QLCTSV.GUI
             {
                 MessageBox.Show("Đang ở chế độ xem/sửa. Vui lòng bấm nút 'Làm mới' để thêm sinh viên mới.");
                 return;
+            }
+            // Kiểm tra logic nhỏ: Mã SV không được để trống
+            if (string.IsNullOrWhiteSpace(textBox_MaSV.Text))
+            {
+                MessageBox.Show("Vui lòng nhập Mã Sinh Viên!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBox_MaSV.Focus(); // Đưa con trỏ chuột về ô này
+                return; // Dừng lại, không chạy tiếp code bên dưới
             }
 
             try
@@ -115,6 +122,8 @@ namespace QLCTSV.GUI
                 }
                 else
                 {
+                    // Đọc kỹ lỗi từ server gửi về (ví dụ: Trùng mã SV)
+                    string errorContent = await response.Content.ReadAsStringAsync();
                     MessageBox.Show("Thêm thất bại. Lỗi: " + response.ReasonPhrase);
                 }
             }
@@ -130,6 +139,12 @@ namespace QLCTSV.GUI
             if (string.IsNullOrEmpty(textBox_MaSV.Text))
             {
                 MessageBox.Show("Vui lòng chọn sinh viên cần sửa từ danh sách!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(textBox_Ten.Text))
+            {
+                MessageBox.Show("Tên sinh viên không được để trống!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

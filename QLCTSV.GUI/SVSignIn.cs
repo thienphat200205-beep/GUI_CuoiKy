@@ -15,6 +15,7 @@ namespace QLCTSV.GUI
 {
     public partial class SVSignIn: Form
     {
+        public static string TaiKhoanDangNhap = "";
         // khởi tạo http client
         private readonly HttpClient _httpClient = new HttpClient()
         {
@@ -88,23 +89,26 @@ namespace QLCTSV.GUI
                 // Đăng nhập thành công (200 OK)
                 string jsonResponse = await response.Content.ReadAsStringAsync();
 
-                // Deserialize kết quả
-                var result = JsonSerializer.Deserialize<AuthResponseDTO>(jsonResponse, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-
-                // 3. Xử lý phản hồi
-                if (result.Role != "SinhVien")
+                if (response.IsSuccessStatusCode)
                 {
-                    MessageBox.Show("Chỉ sinh viên được phép đăng nhập ở đây! Cán bộ vui lòng đăng nhập ở trang 'Công Tác Sinh Viên'.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else if (response.IsSuccessStatusCode)
-                {
-                    MessageBox.Show($"Đăng nhập thành công! Vai trò: {result.Role}", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    var result = JsonSerializer.Deserialize<AuthResponseDTO>(jsonResponse, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
-                    // Đăng nhập thành công sẽ chuyển đến giao diện chính của sinh viên
-                       SVinterface svform = new SVinterface();
+                    // Kiểm tra quyền Sinh Viên
+                    if (result.Role == "SinhVien")
+                    {
+                        // LƯU LẠI MÃ SINH VIÊN VỪA ĐĂNG NHẬP
+                        SVSignIn.TaiKhoanDangNhap = username;
+
+                        MessageBox.Show($"Đăng nhập thành công! Xin chào {username}", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        SVinterface svform = new SVinterface();
                         this.Hide();
                         svform.Show();
-                    
+                    }
+                    else
+                    {
+                        MessageBox.Show("Tài khoản này không phải là Sinh viên!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
                 else if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
                 {

@@ -69,7 +69,7 @@ namespace QLCTSV.GUI
                 if (response.IsSuccessStatusCode)
                 {
                     string jsonContent = await response.Content.ReadAsStringAsync();
-                    List<XemDSachDiemDTO> listDiem = JsonConvert.DeserializeObject<List<XemDSachDiemDTO>>(jsonContent);
+                    List<ThemDiemDTO> listDiem = JsonConvert.DeserializeObject<List<ThemDiemDTO>>(jsonContent);
 
                     dataGridView1.DataSource = listDiem;
 
@@ -90,13 +90,13 @@ namespace QLCTSV.GUI
                 MessageBox.Show("Lỗi kết nối: " + ex.Message);
             }
         }
-        private XemDSachDiemDTO GetDiemFromUI()
+        private ThemDiemDTO GetDiemFromUI()
         {
             // Validate dữ liệu số
             if (!double.TryParse(textBox_GPA.Text, out double gpa)) gpa = 0;
             if (!int.TryParse(textBox_Drl.Text, out int drl)) drl = 0;
 
-            return new XemDSachDiemDTO()
+            return new ThemDiemDTO()
             {
                 MaSV = textBox_MaSV.Text.Trim(),
                 HocKy = textBox_HocKy.Text.Trim(),
@@ -147,7 +147,7 @@ namespace QLCTSV.GUI
 
             try
             {
-                XemDSachDiemDTO diem = GetDiemFromUI();
+                ThemDiemDTO diem = GetDiemFromUI();
 
                 // Validate cơ bản
                 if (string.IsNullOrEmpty(diem.MaSV) || string.IsNullOrEmpty(diem.HocKy))
@@ -189,7 +189,7 @@ namespace QLCTSV.GUI
 
             try
             {
-                XemDSachDiemDTO diem = GetDiemFromUI();
+                ThemDiemDTO diem = GetDiemFromUI();
                 string json = JsonConvert.SerializeObject(diem);
                 StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
 
